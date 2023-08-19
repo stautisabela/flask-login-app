@@ -1,1 +1,7 @@
-#file to store url endpoints
+from flask import Blueprint
+
+views = Blueprint('views', __name__)
+
+@views.route('/')
+def home():
+    return "<h1>Home page</h1>"
